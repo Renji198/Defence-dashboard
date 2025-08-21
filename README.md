@@ -56,6 +56,70 @@ Production CAGR highlights shifts between government-led and private sector defe
 
 Export contracts (2020–24) increased significantly, indicating India’s growing global defence footprint.
 
+Schema Design
+
+<img width="900" height="365" alt="image" src="https://github.com/user-attachments/assets/598cfdfe-97e2-4759-91a6-fbe5f553c1bd" />
+
+
+The dashboard follows a star schema to ensure optimized reporting performance and scalability.
+
+Fact Tables:
+
+Balance Sheet Masterfile
+
+Cash Flow Masterfile
+
+P&L (Profit & Loss)
+
+Operating Activity
+
+Defence Import Data
+
+Defence Production
+
+Dimension Tables:
+
+Company Data (CompanyID, CompanyName, Sector, Market Cap, Industry classification)
+
+Fiscal Year Key (Date/Year dimension for time intelligence)
+
+GOC Weight Table (weighted capital efficiency)
+
+Share Data (Market capitalization, EPS, P/E, ROE)
+
+This schema allows one-to-many relationships between dimension tables and fact tables, supporting efficient time-based, company-based, and financial metric-based analysis.
+
+Key Power BI Features Used
+
+DAX Functions (for advanced financial analysis):
+
+CALCULATE() → Context-based calculations for ratios like ROE, ROA, EPS CAGR.
+
+DIVIDE() → Safe division for financial ratios (EPS, P/E, ROCE).
+
+RANKX() → Ranking companies by financial stability, EPS, ROA, ROCE.
+
+TOTALYTD() / DATESYTD() → Year-to-date EPS and dividend payout comparisons.
+
+AVERAGEX() → Rolling average for growth trends (EPS CAGR, Production CAGR).
+
+Z-SCORE calculation → Standardized measure of company stability.
+
+Field Parameters (for dynamic interactivity):
+
+Used to switch between financial KPIs (EPS, P/E, ROCE, ROA, Z-Score) dynamically.
+
+Enabled comparison views across companies with a single slicer instead of multiple visuals.
+
+Added flexibility to toggle between time-period analysis (2019–24) and metric analysis.
+
+Bookmarks & Navigation:
+
+Implemented bookmarks for page navigation (Financial Stability, Profitability & Valuation, Cash Flow & Production).
+
+Created toggle states to switch between detailed analysis and high-level summary views.
+
+Enhanced user experience with interactive storytelling and drill-through options.
 
 Outcome & Impact
 
