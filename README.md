@@ -1,7 +1,7 @@
 Power BI Dashboard: Financial & Strategic Insights into India’s Defence Sector (2019–2024)
 Project Overview
 
-<img width="1278" height="796" alt="image" src="https://github.com/user-attachments/assets/153ba938-53af-4981-b498-e28265335ab8" />
+<img width="900" height="596" alt="image" src="https://github.com/user-attachments/assets/153ba938-53af-4981-b498-e28265335ab8" />
 
 
 India’s defence sector is rapidly evolving with both government and private players contributing to production, exports, and innovation. To better understand industry trends, I designed and developed a Power BI dashboard that provides a comprehensive 360° analysis of seven major defence companies:
